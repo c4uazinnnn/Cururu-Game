@@ -12,7 +12,7 @@ class Fase01 extends Phaser.Scene {
         this.load.spritesheet('doubleJump', 'img/Ninja Frog/DoubleJump.png', { frameWidth: 32, frameHeight: 32 }); // Spritesheet do double jump
         this.load.spritesheet('plataforma', 'img/plat/plataforma.png', { frameWidth: 32, frameHeight: 32 }); // Spritesheet das plataformas
         this.load.image('chao', 'img/plat/chao.png'); // Imagem do chão
-        this.load.spritesheet('abacaxi', 'img/item/Pineapple.png', { frameWidth: 32, frameHeight: 32 }); // Spritesheet do abacaxi (item)
+        this.load.spritesheet('abacaxi', 'img/Item/Pineapple.png', { frameWidth: 32, frameHeight: 32 }); // Spritesheet do abacaxi (item)
     }
 
     create() {
