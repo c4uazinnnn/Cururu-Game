@@ -1,0 +1,60 @@
+<!doctype html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Cururu Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    
+    <!-- Carregar os scripts das cenas -->
+    <script src="scenes/Fase02.js"></script>
+    <script src="scenes/Tutorial.js"></script>
+    <script src="scenes/BemVindo.js"></script>
+    <script src="scenes/Fase01.js"></script>
+    <script src="scenes/Gameover.js"></script>
+    <script src="scenes/Final.js"></script>
+    
+    
+    <style>
+        body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*Global variables definition*/
+        var config = {
+            type: Phaser.AUTO,
+            scale: {
+                mode: Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER,
+                width: 1200, //largura da tela do jogo
+                height: 570, //altura da tela do jogo
+            },
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 500 },
+                    debug: false 
+                }
+            },
+            backgroundColor: '#5c84e8',
+            scene: [BemVindo, Tutorial, Fase01, Fase02, Final], // Definir as cenas a serem carregadas
+            pixelArt: true            
+        };
+
+        // Cria o jogo com as configurações definidas
+        var game = new Phaser.Game(config);
+    
+    </script>
+
+</body>
+</html>
